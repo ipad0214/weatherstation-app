@@ -1,0 +1,42 @@
+@import "../../../colors.scss";
+
+.days {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+    .day {
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.248);
+        box-shadow: 0 6px 0.4em rgba(53, 53, 53, 0.612);
+        cursor: pointer;
+        text-align: center;
+        
+        border-radius: 100%;
+
+        &:hover {
+            background-color: $standard-hover;
+        }
+
+        span {
+            line-height: 3rem;
+        }
+    }
+
+    .selected {
+        background-color: $selected-background !important;
+    }
+}
+
+.cancel-button {
+    margin-left: 1rem;
+}
+
+.save-button {
+    margin-right: 1rem;
+}
